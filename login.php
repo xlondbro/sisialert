@@ -2,22 +2,25 @@
 require_once 'helper/connection.php';
 session_start();
 
-
+// add
 require_once 'tracing.php'; // include tracing setup
 
 use OpenTelemetry\API\Trace\SpanKind;
 
 $tracer = Tracing::getTracer();
-
+// add end
 
 
 if (isset($_POST['submit'])) {
   // Mulai span tracing login_process
   // var_dump($tracer);
+  // add 
     $span = $tracer->spanBuilder('login_process')
         ->setSpanKind(SpanKind::KIND_SERVER)
         ->startSpan();
     $scope = $span->activate();
+
+    // add end
 
     try {
     $username = $_POST['username'];
@@ -31,20 +34,27 @@ if (isset($_POST['submit'])) {
         $_SESSION['login'] = $row;
         $_SESSION['last_activity'] = time(); // Simpan waktu aktivitas terakhir
         $_SESSION['timeout_duration'] = 1000; // Set durasi timeout (20 menit)
-
+// add
             $span->setAttribute('login.success', true);
             $span->setAttribute('user.username', $username);
+
+            // add end
             // var_dump($span);
         header('Location: alert/index.php');
         exit();
     } else {
+      // add
             $span->setAttribute('login.success', false);
+
+            // add end
             echo "Login gagal! Username atau password salah.";
         }
+        // add
     } finally {
         $span->end();
         $scope->detach();
     }
+    // add end
 }
 
 ?>
