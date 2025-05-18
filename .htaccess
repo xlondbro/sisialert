@@ -1,0 +1,9 @@
+# Aktifkan Rewrite Engine
+RewriteEngine On
+
+# Kecualikan alamat IP tertentu (opsional)
+RewriteCond %{REMOTE_ADDR} #
+
+# Redirect semua request ke halaman maintenance.html
+RewriteCond %{REQUEST_URI} !/private.html$
+RewriteRule ^(.*)$ /private.html [R=302,L]
