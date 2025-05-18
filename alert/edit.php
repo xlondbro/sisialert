@@ -1,9 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 
-?>
-
-<?php
 require_once '../session_check.php';
 require_once '../layout/_top.php';
 require_once '../helper/connection.php';

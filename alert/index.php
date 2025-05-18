@@ -1,14 +1,10 @@
-
 <?php
 require_once '../session_check.php';
 require_once '../layout/_top.php';
 require_once '../helper/connection.php';
 
 $result = mysqli_query($connection, "SELECT * FROM alert order by id_alert desc");
-
 ?>
-
-<?php include_once('otel.php'); ?>
 
 <style>
 .image-container {

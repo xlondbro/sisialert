@@ -1,5 +1,4 @@
 <?php
-session_start();
 $timeout = 1; // 5 menit
 
 function isLogin()
@@ -7,9 +6,10 @@ function isLogin()
   if (!isset($_SESSION['login']) && (time() - $_SESSION['login'] > $timeout)) {
     session_unset();
     session_destroy();
-
-$_SESSION['login'] = time();
-
+    
+    $_SESSION['login'] = time();
+    
+    // session_start();
 
     header('Location: ../index.php');
   }
