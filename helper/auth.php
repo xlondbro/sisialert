@@ -7,10 +7,10 @@ function isLogin()
     session_unset();
     session_destroy();
     
+    // session_start();
     $_SESSION['login'] = time();
     
-    // session_start();
-
+    
     header('Location: ../index.php');
   }
 }

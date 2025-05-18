@@ -1,5 +1,4 @@
 <?php
-session_start();
 // Atur durasi waktu tidak aktif dalam detik (misalnya 30 menit = 1800 detik)
 $inactive = 10;  // 30 menit
 
