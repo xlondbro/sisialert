@@ -3,6 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 require_once '../layout/_top.php';
 require_once '../helper/connection.php';
 $result = mysqli_query($connection, "SELECT * FROM customer");
+require_once('../tracing.php');
 ?>
 
 <section class="section">

@@ -1,0 +1,140 @@
+Starting ConsoleSpanExporter
+OpenTelemetry welcomes PHP
+[
+    {
+        "name": "bar",
+        "context": {
+            "trace_id": "9f2c32ba0a104130109ca35b8cbfec3a",
+            "span_id": "8b5325c40289fce9",
+            "trace_state": "",
+            "trace_flags": 1
+        },
+        "resource": {
+            "service.name": "unknown_service:php",
+            "host.name": "srv824621",
+            "host.arch": "x86_64",
+            "host.id": "471191802ec7401d4fabfe05d8ff4ba1",
+            "os.type": "linux",
+            "os.description": "6.8.0-60-generic",
+            "os.name": "Linux",
+            "os.version": "#63-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 15 19:04:15 UTC 2025",
+            "process.runtime.name": "cli",
+            "process.runtime.version": "8.4.7",
+            "process.pid": 2250,
+            "process.executable.path": "\/usr\/bin\/php8.4",
+            "process.command": ".\/src\/2-send-trace-to-collector.php",
+            "process.command_args": [
+                ".\/src\/2-send-trace-to-collector.php"
+            ],
+            "process.owner": "root",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.language": "php",
+            "telemetry.sdk.version": "1.4.0",
+            "service.instance.id": "02b0bc4c-ecc8-4660-b1e0-a04d1fac4b73"
+        },
+        "parent_span_id": "54fc0d0a635a2ef4",
+        "kind": "KIND_SERVER",
+        "start": 1747574942927905773,
+        "end": 1747574942928002438,
+        "attributes": [],
+        "status": {
+            "code": "Unset",
+            "description": ""
+        },
+        "events": [],
+        "links": [],
+        "schema_url": ""
+    }
+]
+[
+    {
+        "name": "foo",
+        "context": {
+            "trace_id": "9f2c32ba0a104130109ca35b8cbfec3a",
+            "span_id": "54fc0d0a635a2ef4",
+            "trace_state": "",
+            "trace_flags": 1
+        },
+        "resource": {
+            "service.name": "unknown_service:php",
+            "host.name": "srv824621",
+            "host.arch": "x86_64",
+            "host.id": "471191802ec7401d4fabfe05d8ff4ba1",
+            "os.type": "linux",
+            "os.description": "6.8.0-60-generic",
+            "os.name": "Linux",
+            "os.version": "#63-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 15 19:04:15 UTC 2025",
+            "process.runtime.name": "cli",
+            "process.runtime.version": "8.4.7",
+            "process.pid": 2250,
+            "process.executable.path": "\/usr\/bin\/php8.4",
+            "process.command": ".\/src\/2-send-trace-to-collector.php",
+            "process.command_args": [
+                ".\/src\/2-send-trace-to-collector.php"
+            ],
+            "process.owner": "root",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.language": "php",
+            "telemetry.sdk.version": "1.4.0",
+            "service.instance.id": "02b0bc4c-ecc8-4660-b1e0-a04d1fac4b73"
+        },
+        "parent_span_id": "4247d6f251289ade",
+        "kind": "KIND_SERVER",
+        "start": 1747574942927891954,
+        "end": 1747574942928406804,
+        "attributes": [],
+        "status": {
+            "code": "Unset",
+            "description": ""
+        },
+        "events": [],
+        "links": [],
+        "schema_url": ""
+    }
+]
+[
+    {
+        "name": "root",
+        "context": {
+            "trace_id": "9f2c32ba0a104130109ca35b8cbfec3a",
+            "span_id": "4247d6f251289ade",
+            "trace_state": "",
+            "trace_flags": 1
+        },
+        "resource": {
+            "service.name": "unknown_service:php",
+            "host.name": "srv824621",
+            "host.arch": "x86_64",
+            "host.id": "471191802ec7401d4fabfe05d8ff4ba1",
+            "os.type": "linux",
+            "os.description": "6.8.0-60-generic",
+            "os.name": "Linux",
+            "os.version": "#63-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 15 19:04:15 UTC 2025",
+            "process.runtime.name": "cli",
+            "process.runtime.version": "8.4.7",
+            "process.pid": 2250,
+            "process.executable.path": "\/usr\/bin\/php8.4",
+            "process.command": ".\/src\/2-send-trace-to-collector.php",
+            "process.command_args": [
+                ".\/src\/2-send-trace-to-collector.php"
+            ],
+            "process.owner": "root",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.language": "php",
+            "telemetry.sdk.version": "1.4.0",
+            "service.instance.id": "02b0bc4c-ecc8-4660-b1e0-a04d1fac4b73"
+        },
+        "parent_span_id": "",
+        "kind": "KIND_SERVER",
+        "start": 1747574942927531455,
+        "end": 1747574942928509258,
+        "attributes": [],
+        "status": {
+            "code": "Unset",
+            "description": ""
+        },
+        "events": [],
+        "links": [],
+        "schema_url": ""
+    }
+]
